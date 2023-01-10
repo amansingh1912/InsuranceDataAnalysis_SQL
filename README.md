@@ -46,7 +46,7 @@ Northwest -> 4035712
 Q4) Make a age range column extra in the table where mention the Age range like "Under 20", "20-30", "31-50" and "above 50".
 Ans:
 
-###Code:
+### Code:
 UPDATE insurance
 SET `age range`= "Under 20"
 where age<20;
@@ -67,7 +67,7 @@ where age>50;
 Q5) Find Age Range with total charges from insurance.
 Ans:
 
-###Code:
+### Code:
 SELECT `age range`, ROUND(SUM(charges)) as TotalCharges from insurance
 group by `age range`
 order by TotalCharges desc;
@@ -82,7 +82,7 @@ Above 50:  356
 Q6) Find average bmi from insurance.
 Ans:
 
-###Code:
+### Code:
 SELECT ROUND(avg(bmi)) from insurance;
 
 ### Output:
